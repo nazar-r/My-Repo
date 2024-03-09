@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Kanit:wght@400;700&display=swap');
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DotGothic16", sans-serif;
+}
+
+.header {
+    background-color: aquamarine;
+    padding: 6px;
+}
+
+.header__title,
+.header__logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    color: #000000;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+    .header__nav {
+        display: flex;
+    }
+
+    .header__menu {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex: 1;
+    }
+}
+
+.header__banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/baby-yoda.svg);
+    background-size: cover;
+    background-position: 50% 50%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__title {
+    color: #4ec288;
+}
+
+.products {
+    padding: 6px;
+}
+
+.products__list {
+    display: grid;
+    gap: 6px;
+}
+
+.product-card {
+    background: #00000030;
+    padding: 6px;
+}
+
+
+@media (min-width: 600px) {
+
+    .products__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .products__list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .products__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

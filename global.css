@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 0 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        padding: 0 15px;
+    }
+}
+
+:root {
+    --text-color: #d6fb00;
+    --background-color: #191919;
+    --background-color-alternate: #1f1f1f;
+    --background-color-dark: #070707;
+    --background-07-transparent: rgba(0, 0, 0, .7);
+    --basic-text-color: #dcdcdc;
+    --title-color: #ffffff;
+    --accent-color: #8f8f8f;
+    --input-color: #232323;
+    --footer-email-color: #1e1e1e;
+    --suggestion-font-size-s: 15px;
+    --suggestion-font-size-m: 17px;
+    --suggestion-font-size-l: 38px;
+
+    --footer-font-size-s: 15px;
+    --footer-font-size-m: 16px;
+    --footer-font-size-l: 19px;
+
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+    scroll-behavior: smooth;
+    background-color: var(--background-color);
+}
+
+.responsive {
+    background-color: var(--background-color-dark);
+}
