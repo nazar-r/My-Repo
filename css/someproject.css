@@ -52,7 +52,7 @@ body {
 }
 
 .header__banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/baby-yoda.svg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/baby-yoda.svg);
     background-size: cover;
     background-position: 50% 50%;
     min-height: 500px;
